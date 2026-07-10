@@ -349,7 +349,7 @@ h2 em, .commit-quote em, h1 em {
 }
 .ba-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .ba-top { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
-.ba-top .ba-img { filter: grayscale(0.95) brightness(0.42) sepia(0.28) contrast(0.92); }
+.ba-top .ba-img { filter: grayscale(0.85) brightness(0.55) sepia(0.42) contrast(0.9); }
 .ba-handle {
   position: absolute; top: 0; bottom: 0; left: var(--pos);
   transform: translateX(-50%); z-index: 3; pointer-events: none;
@@ -808,14 +808,18 @@ a.contact-card:hover { border-color: rgba(109, 181, 41, 0.55); transform: transl
   .nav-links, .btn-nav { display: none; }
   .burger { display: block; }
   .grid-2 { grid-template-columns: 1fr; }
-  .hero { min-height: 0; }
-  .hero-grid { grid-template-columns: 1fr; gap: 34px; }
-  .hero-veil {
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.9) 55%, rgba(255, 255, 255, 0.72) 82%, #f4f8f0 100%);
+  .hero { min-height: 0; padding-bottom: 0; }
+  .hero-grid { grid-template-columns: 1fr; gap: 26px; }
+  .hero-bg { inset: auto 0 0 0; height: 400px; }
+  .hero-bg img { object-position: 62% 30%; }
+  .hero-bg::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, #fbfdf9 0%, rgba(251, 253, 249, 0.32) 30%, rgba(251, 253, 249, 0) 55%, rgba(244, 248, 240, 0.5) 90%, #f4f8f0 100%);
   }
-  .hero-chips { min-height: 0; height: auto; display: flex; flex-wrap: wrap; gap: 14px; }
-  .hero-chip { position: static; animation: none; }
+  .hero-veil, .hero-blob-2 { display: none; }
+  .hero-chips { min-height: 330px; }
+  .chip-1 { top: 46px; left: 2%; }
+  .chip-2 { bottom: 54px; right: 2%; }
   .svc-grid, .why-grid { grid-template-columns: 1fr 1fr; }
   .plan-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
   .plan-featured { transform: none; }

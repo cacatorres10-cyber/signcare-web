@@ -422,7 +422,7 @@
         nav.classList.toggle("scrolled", y > 30);
         const h = document.documentElement.scrollHeight - window.innerHeight;
         if (progress) progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
-        if (heroBgImg && y < window.innerHeight && !reducedMotion) {
+        if (heroBgImg && y < window.innerHeight && !reducedMotion && window.innerWidth > 980) {
           heroBgImg.style.transform = "translateY(" + y * 0.16 + "px)";
         }
         ticking = false;
