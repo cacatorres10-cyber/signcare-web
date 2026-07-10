@@ -410,6 +410,7 @@
   /* ---------------- Nav ---------------- */
   const nav = $("#nav");
   const progress = $("#scrollProgress");
+  const heroBgImg = $("#heroBgImg");
   let ticking = false;
   window.addEventListener(
     "scroll",
@@ -421,6 +422,9 @@
         nav.classList.toggle("scrolled", y > 30);
         const h = document.documentElement.scrollHeight - window.innerHeight;
         if (progress) progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
+        if (heroBgImg && y < window.innerHeight && !reducedMotion) {
+          heroBgImg.style.transform = "translateY(" + y * 0.16 + "px)";
+        }
         ticking = false;
       });
     },
