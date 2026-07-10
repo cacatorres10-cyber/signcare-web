@@ -22,6 +22,8 @@
       "hero.stat1": "Respuesta de emergencia",
       "hero.stat2": "Enfocados en rótulos",
       "hero.stat3": "Islas con cobertura",
+      "hero.chip1": "Emergencias",
+      "hero.chip2": "Cobertura total",
 
       "mq.items": "Limpieza profunda·Módulos LED·Transformadores·Fotoceldas·Revisión estructural·Sellados y anclajes·Restauración de brillo·Laminado protector·Emergencias 24h·Inspección preventiva",
 
@@ -178,6 +180,8 @@
       "hero.stat1": "Emergency response",
       "hero.stat2": "Focused on signs",
       "hero.stat3": "Islands covered",
+      "hero.chip1": "Emergencies",
+      "hero.chip2": "Full coverage",
 
       "mq.items": "Deep cleaning·LED modules·Transformers·Photocells·Structural inspection·Seals & anchors·Shine restoration·Protective laminate·24h emergencies·Preventive inspection",
 
@@ -389,10 +393,6 @@
         nav.classList.toggle("scrolled", y > 30);
         const h = document.documentElement.scrollHeight - window.innerHeight;
         if (progress) progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
-        // hero parallax
-        if (heroBg && y < window.innerHeight && !reducedMotion) {
-          heroBg.style.transform = `translateY(${y * 0.25}px)`;
-        }
         ticking = false;
       });
     },
@@ -467,9 +467,6 @@
   } else {
     counters.forEach((el) => (el.textContent = el.dataset.count));
   }
-
-  /* ---------------- Hero parallax ref ---------------- */
-  const heroBg = $("#heroBg");
 
   /* ---------------- Cursor glow ---------------- */
   const glow = $("#cursorGlow");

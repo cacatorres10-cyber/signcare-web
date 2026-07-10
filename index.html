@@ -8,8 +8,8 @@
   <meta property="og:title" content="SignCare Group, LLC — Su rótulo, como nuevo" />
   <meta property="og:description" content="Mantenimiento preventivo y correctivo de rótulos comerciales. Puerto Rico & Islas Vírgenes. Emergencias en menos de 24h." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/hero.jpg" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23070B08'/%3E%3Ccircle cx='32' cy='32' r='29' fill='none' stroke='%237BC62D' stroke-width='2'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='30'%3E%3Ctspan fill='%23ffffff'%3ES%3C/tspan%3E%3Ctspan fill='%237BC62D'%3EC%3C/tspan%3E%3C/text%3E%3C/svg%3E" />
+  <meta property="og:image" content="assets/hero-tech.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23ffffff'/%3E%3Ccircle cx='32' cy='32' r='29' fill='none' stroke='%2357911A' stroke-width='3'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='30'%3E%3Ctspan fill='%23101809'%3ES%3C/tspan%3E%3Ctspan fill='%2357911A'%3EC%3C/tspan%3E%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -37,12 +37,12 @@
         <svg class="brand-mark" viewBox="0 0 96 96" aria-hidden="true">
           <defs>
             <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#EAF2E3"/>
-              <stop offset="100%" stop-color="#7BC62D"/>
+              <stop offset="0%" stop-color="#101809"/>
+              <stop offset="100%" stop-color="#6DB529"/>
             </linearGradient>
           </defs>
           <circle cx="48" cy="48" r="44" fill="none" stroke="url(#ringGrad)" stroke-width="3"/>
-          <text x="49" y="62" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-weight="800" font-size="40" letter-spacing="-3"><tspan fill="#F4F8F0">S</tspan><tspan fill="#7BC62D">C</tspan></text>
+          <text x="49" y="62" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-weight="800" font-size="40" letter-spacing="-3"><tspan fill="#101809">S</tspan><tspan fill="#57911A">C</tspan></text>
         </svg>
         <span class="brand-word"><b>SIGN</b><i>CARE</i></span>
       </a>
@@ -84,33 +84,45 @@
 
     <!-- ======== HERO ======== -->
     <section class="hero" id="hero">
-      <div class="hero-bg" id="heroBg">
-        <img src="assets/hero.jpg" alt="" fetchpriority="high" />
-      </div>
-      <div class="hero-veil" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
 
-      <div class="hero-content container">
-        <p class="eyebrow reveal" data-i18n="hero.eyebrow">SignCare Group, LLC · Puerto Rico &amp; Islas Vírgenes</p>
-        <h1 class="hero-title reveal" data-i18n-html="hero.title">Su rótulo,<br /><span class="neon" id="neonWord">como&nbsp;nuevo</span>.<br />Sin gastar miles.</h1>
-        <p class="hero-sub reveal" data-i18n="hero.sub">Especialistas exclusivos en mantenimiento preventivo y correctivo de rótulos comerciales. Protegemos su inversión y la imagen de su negocio durante todo el año.</p>
-        <div class="hero-ctas reveal">
-          <a href="#contacto" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Solicitar diagnóstico</a>
-          <a href="#planes" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Ver planes</a>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">SignCare Group, LLC · Puerto Rico &amp; Islas Vírgenes</p>
+          <h1 class="hero-title reveal" data-i18n-html="hero.title">Su rótulo,<br /><span class="neon" id="neonWord">como&nbsp;nuevo</span>.<br />Sin gastar miles.</h1>
+          <p class="hero-sub reveal" data-i18n="hero.sub">Especialistas exclusivos en mantenimiento preventivo y correctivo de rótulos comerciales. Protegemos su inversión y la imagen de su negocio durante todo el año.</p>
+          <div class="hero-ctas reveal">
+            <a href="#contacto" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Solicitar diagnóstico</a>
+            <a href="#planes" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Ver planes</a>
+          </div>
+          <div class="hero-stats reveal">
+            <div class="stat">
+              <span class="stat-num">&lt;<b class="count" data-count="24">0</b>h</span>
+              <span class="stat-label" data-i18n="hero.stat1">Respuesta de emergencia</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num"><b class="count" data-count="100">0</b>%</span>
+              <span class="stat-label" data-i18n="hero.stat2">Enfocados en rótulos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num"><b class="count" data-count="5">0</b></span>
+              <span class="stat-label" data-i18n="hero.stat3">Islas con cobertura</span>
+            </div>
+          </div>
         </div>
-        <div class="hero-stats reveal">
-          <div class="stat">
-            <span class="stat-num">&lt;<b class="count" data-count="24">0</b>h</span>
-            <span class="stat-label" data-i18n="hero.stat1">Respuesta de emergencia</span>
+
+        <div class="hero-visual reveal">
+          <div class="hero-photo">
+            <img src="assets/hero-tech.jpg" alt="Técnicos de SignCare trabajando en altura en un rótulo comercial" fetchpriority="high" />
           </div>
-          <div class="stat">
-            <span class="stat-num"><b class="count" data-count="100">0</b>%</span>
-            <span class="stat-label" data-i18n="hero.stat2">Enfocados en rótulos</span>
+          <div class="hero-chip chip-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            <div><b>&lt;24h</b><span data-i18n="hero.chip1">Emergencias</span></div>
           </div>
-          <div class="stat">
-            <span class="stat-num"><b class="count" data-count="5">0</b></span>
-            <span class="stat-label" data-i18n="hero.stat3">Islas con cobertura</span>
+          <div class="hero-chip chip-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><b>PR + USVI</b><span data-i18n="hero.chip2">Cobertura total</span></div>
           </div>
         </div>
       </div>
@@ -169,7 +181,7 @@
         <div class="svc-grid">
           <article class="svc-card reveal tilt">
             <div class="svc-media">
-              <img src="assets/svc-cleaning.jpg" alt="Técnicos trabajando en altura" loading="lazy" />
+              <img src="assets/svc-facade.jpg" alt="Fachada comercial limpia y bien mantenida" loading="lazy" />
               <span class="svc-num">01</span>
             </div>
             <h3 data-i18n="svc.c1.title">Limpieza &amp; Restauración</h3>
@@ -470,7 +482,13 @@
       <div class="footer-brand">
         <a href="#top" class="brand">
           <svg class="brand-mark" viewBox="0 0 96 96" aria-hidden="true">
-            <circle cx="48" cy="48" r="44" fill="none" stroke="url(#ringGrad)" stroke-width="3"/>
+            <defs>
+              <linearGradient id="ringGradF" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#EAF2E3"/>
+                <stop offset="100%" stop-color="#7BC62D"/>
+              </linearGradient>
+            </defs>
+            <circle cx="48" cy="48" r="44" fill="none" stroke="url(#ringGradF)" stroke-width="3"/>
             <text x="49" y="62" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-weight="800" font-size="40" letter-spacing="-3"><tspan fill="#F4F8F0">S</tspan><tspan fill="#7BC62D">C</tspan></text>
           </svg>
           <span class="brand-word"><b>SIGN</b><i>CARE</i></span>
