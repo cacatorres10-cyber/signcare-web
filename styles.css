@@ -313,6 +313,7 @@ h2 em, .commit-quote em, h1 em {
 }
 .marquee-track {
   display: flex; gap: 44px; width: max-content;
+  padding-right: 44px;
   animation: marquee 36s linear infinite;
   font-family: var(--font-head); font-weight: 700; font-size: 0.95rem;
   letter-spacing: 0.12em; text-transform: uppercase; color: #4c5b46;
@@ -838,6 +839,10 @@ a.contact-card:hover { border-color: rgba(109, 181, 41, 0.55); transform: transl
     transition-duration: 0.01ms !important;
   }
   .reveal { opacity: 1; transform: none; }
-  .marquee-track { animation: none; }
   .cursor-glow { display: none; }
+  /* Ambient brand loops stay on (slower): marquee, radar, pulses */
+  .marquee-track { animation: marquee 60s linear infinite !important; }
+  .radar-sweep { animation: sweep 6.5s linear infinite !important; }
+  .cov-dot { animation: covPulse 3.2s ease-in-out infinite !important; }
+  .pulse-badge { animation: badgePulse 2.8s ease-in-out infinite !important; }
 }

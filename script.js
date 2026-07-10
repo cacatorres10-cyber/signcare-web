@@ -548,7 +548,7 @@
     const lbCap = $("#lbCap");
     const lbClose = $("#lbClose");
     let rot = 0, vel = 0, dragging = false, moved = 0, lastX = 0;
-    let autoOn = !reducedMotion;
+    let autoOn = true;
     let autoTimer = null;
     let lbOpen = false;
 
@@ -590,7 +590,7 @@
       autoOn = false;
       clearTimeout(autoTimer);
       autoTimer = setTimeout(() => {
-        if (!reducedMotion && !lbOpen) autoOn = true;
+        if (!lbOpen) autoOn = true;
       }, 3200);
     }
 
@@ -630,7 +630,6 @@
     window.addEventListener("pointerup", () => {
       if (!dragging) return;
       dragging = false;
-      if (reducedMotion) vel = 0;
       pauseAuto();
     });
 
