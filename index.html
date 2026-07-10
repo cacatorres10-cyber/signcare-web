@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignCare Group, LLC — Mantenimiento de Rótulos Comerciales | Puerto Rico & USVI</title>
+  <meta name="description" content="Especialistas exclusivos en mantenimiento preventivo y correctivo de rótulos comerciales en Puerto Rico, Vieques, Culebra, St. Thomas y St. John. Su rótulo, como nuevo — sin gastar miles en reemplazarlo." />
+  <meta property="og:title" content="SignCare Group, LLC — Su rótulo, como nuevo" />
+  <meta property="og:description" content="Mantenimiento preventivo y correctivo de rótulos comerciales. Puerto Rico & Islas Vírgenes. Emergencias en menos de 24h." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23070B08'/%3E%3Ccircle cx='32' cy='32' r='29' fill='none' stroke='%237BC62D' stroke-width='2'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='30'%3E%3Ctspan fill='%23ffffff'%3ES%3C/tspan%3E%3Ctspan fill='%237BC62D'%3EC%3C/tspan%3E%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-logo">
+      <span class="pl-s">SIGN</span><span class="pl-c">CARE</span>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Cursor glow (desktop) -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ======== NAV ======== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand" aria-label="SignCare Group, LLC">
+        <svg class="brand-mark" viewBox="0 0 96 96" aria-hidden="true">
+          <defs>
+            <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#EAF2E3"/>
+              <stop offset="100%" stop-color="#7BC62D"/>
+            </linearGradient>
+          </defs>
+          <circle cx="48" cy="48" r="44" fill="none" stroke="url(#ringGrad)" stroke-width="3"/>
+          <text x="49" y="62" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-weight="800" font-size="40" letter-spacing="-3"><tspan fill="#F4F8F0">S</tspan><tspan fill="#7BC62D">C</tspan></text>
+        </svg>
+        <span class="brand-word"><b>SIGN</b><i>CARE</i></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#planes" data-i18n="nav.plans">Planes</a>
+        <a href="#cobertura" data-i18n="nav.coverage">Cobertura</a>
+        <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" id="langES" data-lang="es">ES</button>
+          <button class="lang-btn" id="langEN" data-lang="en">EN</button>
+        </div>
+        <a class="btn btn-primary btn-nav" href="#contacto" data-i18n="nav.cta">Diagnóstico gratis</a>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#planes" data-i18n="nav.plans">Planes</a>
+      <a href="#cobertura" data-i18n="nav.coverage">Cobertura</a>
+      <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      <a class="btn btn-primary" href="#contacto" data-i18n="nav.cta">Diagnóstico gratis</a>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" id="heroBg">
+        <img src="assets/hero.jpg" alt="" fetchpriority="high" />
+      </div>
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+      <div class="hero-content container">
+        <p class="eyebrow reveal" data-i18n="hero.eyebrow">SignCare Group, LLC · Puerto Rico &amp; Islas Vírgenes</p>
+        <h1 class="hero-title reveal" data-i18n-html="hero.title">Su rótulo,<br /><span class="neon" id="neonWord">como&nbsp;nuevo</span>.<br />Sin gastar miles.</h1>
+        <p class="hero-sub reveal" data-i18n="hero.sub">Especialistas exclusivos en mantenimiento preventivo y correctivo de rótulos comerciales. Protegemos su inversión y la imagen de su negocio durante todo el año.</p>
+        <div class="hero-ctas reveal">
+          <a href="#contacto" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Solicitar diagnóstico</a>
+          <a href="#planes" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Ver planes</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num">&lt;<b class="count" data-count="24">0</b>h</span>
+            <span class="stat-label" data-i18n="hero.stat1">Respuesta de emergencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><b class="count" data-count="100">0</b>%</span>
+            <span class="stat-label" data-i18n="hero.stat2">Enfocados en rótulos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><b class="count" data-count="5">0</b></span>
+            <span class="stat-label" data-i18n="hero.stat3">Islas con cobertura</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#lema" class="scroll-hint" aria-label="Scroll">
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ======== MARQUEE ======== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </div>
+
+    <!-- ======== LEMA / BEFORE-AFTER ======== -->
+    <section class="section lema" id="lema">
+      <div class="container grid-2">
+        <div class="lema-copy">
+          <p class="eyebrow reveal" data-i18n="lema.eyebrow">La pregunta correcta</p>
+          <h2 class="reveal" data-i18n-html="lema.title">“¿Por qué gastar <em>miles de dólares</em> en un rótulo nuevo, cuando el suyo puede lucir y funcionar <em>como nuevo</em>?”</h2>
+          <p class="reveal" data-i18n="lema.body">En SignCare Group, LLC nos especializamos exclusivamente en el mantenimiento de rótulos comerciales. Un rótulo limpio, iluminado y bien mantenido transmite confianza, atrae más clientes y fortalece la imagen de cualquier negocio — y evita costosas reparaciones o un reemplazo prematuro.</p>
+          <ul class="check-trio reveal">
+            <li data-i18n="lema.p1">Protege su inversión</li>
+            <li data-i18n="lema.p2">Prolonga la vida útil</li>
+            <li data-i18n="lema.p3">Imagen profesional todo el año</li>
+          </ul>
+        </div>
+
+        <div class="ba-wrap reveal">
+          <div class="ba" id="beforeAfter">
+            <img class="ba-img" src="assets/signs-vivid.jpg" alt="Rótulo restaurado, después del mantenimiento SignCare" />
+            <div class="ba-top" id="baTop">
+              <img class="ba-img" src="assets/signs-vivid.jpg" alt="Rótulo deteriorado, antes del mantenimiento" />
+            </div>
+            <div class="ba-handle" id="baHandle" aria-hidden="true">
+              <span class="ba-line"></span>
+              <span class="ba-knob">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6"/></svg>
+              </span>
+            </div>
+            <span class="ba-tag ba-tag-l" data-i18n="lema.before">Antes</span>
+            <span class="ba-tag ba-tag-r" data-i18n="lema.after">Después</span>
+            <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Comparar antes y después" />
+          </div>
+          <p class="ba-hint" data-i18n="lema.hint">← Deslice para ver la diferencia →</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SERVICES ======== -->
+    <section class="section services" id="servicios">
+      <div class="container">
+        <p class="eyebrow center reveal" data-i18n="svc.eyebrow">¿Qué hacemos?</p>
+        <h2 class="center reveal" data-i18n-html="svc.title">Un programa completo para que su rótulo<br class="br-lg" /> <em>nunca deje de brillar</em></h2>
+
+        <div class="svc-grid">
+          <article class="svc-card reveal tilt">
+            <div class="svc-media">
+              <img src="assets/svc-cleaning.jpg" alt="Técnicos trabajando en altura" loading="lazy" />
+              <span class="svc-num">01</span>
+            </div>
+            <h3 data-i18n="svc.c1.title">Limpieza &amp; Restauración</h3>
+            <p data-i18n="svc.c1.desc">Eliminamos la suciedad que corroe y apaga su rótulo, devolviéndole el brillo del primer día.</p>
+            <ul class="svc-list">
+              <li data-i18n="svc.c1.i1">Limpieza profunda de rótulos comerciales</li>
+              <li data-i18n="svc.c1.i2">Remoción de contaminación y excremento de aves</li>
+              <li data-i18n="svc.c1.i3">Letras, acrílicos, cajas de luz y paneles</li>
+              <li data-i18n="svc.c1.i4">Restauración del brillo y protección laminada</li>
+              <li data-i18n="svc.c1.i5">Tornillería, anclajes y sellados</li>
+              <li data-i18n="svc.c1.i6">Inspección preventiva completa</li>
+            </ul>
+          </article>
+
+          <article class="svc-card reveal tilt">
+            <div class="svc-media">
+              <img src="assets/svc-electric.jpg" alt="Electricista dando mantenimiento a un sistema" loading="lazy" />
+              <span class="svc-num">02</span>
+            </div>
+            <h3 data-i18n="svc.c2.title">Mantenimiento Eléctrico</h3>
+            <p data-i18n="svc.c2.desc">Su iluminación siempre encendida: diagnóstico y reparación del sistema eléctrico completo.</p>
+            <ul class="svc-list">
+              <li data-i18n="svc.c2.i1">Diagnóstico del sistema eléctrico</li>
+              <li data-i18n="svc.c2.i2">Cambio de módulos LED</li>
+              <li data-i18n="svc.c2.i3">Reemplazo de transformadores y fotoceldas</li>
+              <li data-i18n="svc.c2.i4">Revisión de cableado y conexiones</li>
+              <li data-i18n="svc.c2.i5">Corrección de fallas eléctricas</li>
+              <li data-i18n="svc.c2.i6">Reparación de iluminación parcial o total</li>
+            </ul>
+          </article>
+
+          <article class="svc-card reveal tilt">
+            <div class="svc-media">
+              <img src="assets/svc-repair.jpg" alt="Rótulo de un comercio iluminado de noche" loading="lazy" />
+              <span class="svc-num">03</span>
+            </div>
+            <h3 data-i18n="svc.c3.title">Reparaciones Correctivas</h3>
+            <p data-i18n="svc.c3.desc">Cuando detectamos una avería, la resolvemos — su rótulo vuelve a funcionar como debe.</p>
+            <ul class="svc-list">
+              <li data-i18n="svc.c3.i1">Reparación de letras iluminadas</li>
+              <li data-i18n="svc.c3.i2">Reparación de cajas de luz</li>
+              <li data-i18n="svc.c3.i3">Sustitución de componentes eléctricos dañados</li>
+              <li data-i18n="svc.c3.i4">Reparaciones por desgaste natural</li>
+              <li data-i18n="svc.c3.i5">Reemplazo de piezas deterioradas</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== COVERAGE ======== -->
+    <section class="section coverage" id="cobertura">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow reveal" data-i18n="cov.eyebrow">Cobertura</p>
+          <h2 class="reveal" data-i18n-html="cov.title">De Puerto Rico<br />a las <em>Islas Vírgenes</em></h2>
+          <p class="reveal" data-i18n="cov.body">Nuestro equipo está preparado para atender desde pequeños comercios hasta cadenas comerciales con múltiples localidades.</p>
+          <ul class="cov-list reveal">
+            <li><span class="cov-dot"></span><span data-i18n="cov.i1">Todo Puerto Rico</span></li>
+            <li><span class="cov-dot"></span>Vieques</li>
+            <li><span class="cov-dot"></span>Culebra</li>
+            <li><span class="cov-dot"></span>St. Thomas</li>
+            <li><span class="cov-dot"></span>St. John</li>
+          </ul>
+        </div>
+        <div class="radar-wrap reveal">
+          <div class="radar">
+            <div class="radar-ring r1"></div>
+            <div class="radar-ring r2"></div>
+            <div class="radar-ring r3"></div>
+            <div class="radar-sweep"></div>
+            <span class="radar-pin pin-pr" data-name="Puerto Rico"></span>
+            <span class="radar-pin pin-vq" data-name="Vieques"></span>
+            <span class="radar-pin pin-cu" data-name="Culebra"></span>
+            <span class="radar-pin pin-st" data-name="St. Thomas"></span>
+            <span class="radar-pin pin-sj" data-name="St. John"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== EMERGENCY ======== -->
+    <section class="emergency" id="emergencia">
+      <div class="emergency-bg"><img src="assets/emergency.jpg" alt="" loading="lazy" /></div>
+      <div class="container emergency-inner">
+        <div class="pulse-badge reveal" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </div>
+        <h2 class="reveal" data-i18n-html="emg.title">¿Rótulo apagado?<br />Respondemos en <em>menos de 24 horas</em>.</h2>
+        <p class="reveal" data-i18n="emg.body">Un rótulo apagado afecta la imagen de su negocio y representa pérdidas. Nuestros clientes con contrato de mantenimiento cuentan con atención prioritaria y respuesta de emergencia garantizada.</p>
+        <div class="hero-ctas reveal">
+          <a href="tel:+17875504894" class="btn btn-primary btn-lg">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span data-i18n="emg.cta">Llamar ahora · (787) 550-4894</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PLANS ======== -->
+    <section class="section plans" id="planes">
+      <div class="container">
+        <p class="eyebrow center reveal" data-i18n="plans.eyebrow">Planes de mantenimiento</p>
+        <h2 class="center reveal" data-i18n-html="plans.title">Un plan a la medida<br class="br-lg" /> de <em>cada negocio</em></h2>
+
+        <div class="plan-grid">
+          <article class="plan-card reveal">
+            <h3>Básico</h3>
+            <p class="plan-tag" data-i18n="plans.b.tag">Lo esencial, bien hecho</p>
+            <ul>
+              <li data-i18n="plans.b.i1">Limpieza profesional</li>
+              <li data-i18n="plans.b.i2">Inspección general</li>
+              <li data-i18n="plans.b.i3">Remoción de contaminantes</li>
+              <li data-i18n="plans.b.i4">Revisión estructural</li>
+              <li data-i18n="plans.b.i5">Informe del estado del rótulo</li>
+            </ul>
+            <button class="btn btn-outline plan-cta" data-plan="Básico" data-i18n="plans.b.cta">Elegir Básico</button>
+          </article>
+
+          <article class="plan-card plan-featured reveal">
+            <span class="plan-flag" data-i18n="plans.p.flag">Más popular</span>
+            <h3>Premium</h3>
+            <p class="plan-tag" data-i18n="plans.p.tag">Todo lo del Básico, además de:</p>
+            <ul>
+              <li data-i18n="plans.p.i1">Revisión eléctrica</li>
+              <li data-i18n="plans.p.i2">Diagnóstico de iluminación</li>
+              <li data-i18n="plans.p.i3">Ajustes menores</li>
+              <li data-i18n="plans.p.i4">Atención prioritaria</li>
+              <li data-i18n="plans.p.i5">Descuentos en reparaciones</li>
+            </ul>
+            <button class="btn btn-primary plan-cta" data-plan="Premium" data-i18n="plans.p.cta">Elegir Premium</button>
+          </article>
+
+          <article class="plan-card plan-gold reveal">
+            <span class="plan-flag flag-gold">Gold</span>
+            <h3>Gold</h3>
+            <p class="plan-tag" data-i18n="plans.g.tag">Cobertura total. Todo lo anterior, más:</p>
+            <ul>
+              <li data-i18n="plans.g.i1">Respuesta de emergencia &lt;24h</li>
+              <li data-i18n="plans.g.i2">Prioridad máxima de servicio</li>
+              <li data-i18n="plans.g.i3">Visitas preventivas programadas</li>
+              <li data-i18n="plans.g.i4">Cobertura para múltiples rótulos</li>
+              <li data-i18n="plans.g.i5">Descuentos especiales en piezas</li>
+            </ul>
+            <button class="btn btn-gold plan-cta" data-plan="Gold" data-i18n="plans.g.cta">Elegir Gold</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== WHY / MISSION ======== -->
+    <section class="section why" id="nosotros">
+      <div class="container">
+        <p class="eyebrow center reveal" data-i18n="why.eyebrow">¿Por qué SignCare?</p>
+        <h2 class="center reveal" data-i18n-html="why.title">El aliado que su rótulo<br class="br-lg" /> <em>estaba esperando</em></h2>
+
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <svg class="why-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-5"/></svg>
+            <h3 data-i18n="why.i1.t">Especialistas exclusivos</h3>
+            <p data-i18n="why.i1.d">Solo hacemos una cosa: mantenimiento de rótulos. Y la hacemos mejor que nadie.</p>
+          </div>
+          <div class="why-item reveal">
+            <svg class="why-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+            <h3 data-i18n="why.i2.t">Protegemos su inversión</h3>
+            <p data-i18n="why.i2.d">Evitamos gastos innecesarios en reemplazos y aumentamos la vida útil de su rótulo.</p>
+          </div>
+          <div class="why-item reveal">
+            <svg class="why-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a5 5 0 0 0-6.9 6.9L2 19v3h3l5.8-5.8a5 5 0 0 0 6.9-6.9L14 13l-3-3 3.7-3.7z"/></svg>
+            <h3 data-i18n="why.i3.t">Técnicos capacitados</h3>
+            <p data-i18n="why.i3.d">Equipo altamente entrenado en estructuras, acrílicos y sistemas eléctricos de rotulación.</p>
+          </div>
+          <div class="why-item reveal">
+            <svg class="why-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <h3 data-i18n="why.i4.t">Servicio rápido</h3>
+            <p data-i18n="why.i4.d">Soluciones profesionales y confiables, con emergencias atendidas en menos de 24 horas.</p>
+          </div>
+          <div class="why-item reveal">
+            <svg class="why-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <h3 data-i18n="why.i5.t">Cobertura regional</h3>
+            <p data-i18n="why.i5.d">Puerto Rico, Vieques, Culebra, St. Thomas y St. John — donde esté su negocio.</p>
+          </div>
+          <div class="why-item reveal">
+            <svg class="why-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <h3 data-i18n="why.i6.t">Planes adaptados</h3>
+            <p data-i18n="why.i6.d">Tres niveles de mantenimiento diseñados para ajustarse a cada tipo de negocio.</p>
+          </div>
+        </div>
+
+        <div class="mv-grid">
+          <div class="mv-card reveal">
+            <span class="mv-label" data-i18n="why.mision.t">Nuestra Misión</span>
+            <p data-i18n="why.mision.d">Brindar el mejor servicio de mantenimiento de rótulos comerciales, con soluciones rápidas, profesionales y confiables que mantengan su imagen corporativa siempre en excelentes condiciones.</p>
+          </div>
+          <div class="mv-card reveal">
+            <span class="mv-label" data-i18n="why.vision.t">Nuestra Visión</span>
+            <p data-i18n="why.vision.d">Ser la empresa líder en mantenimiento de rótulos en Puerto Rico y expandirnos al Caribe, como el aliado de confianza de empresas, franquicias y comercios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== COMMITMENT ======== -->
+    <section class="commitment">
+      <div class="container">
+        <p class="commit-quote reveal" data-i18n-html="commit.quote">No espere a que su rótulo deje de funcionar.<br /><em>Permítanos cuidarlo</em> antes de que se convierta en un gasto mayor.</p>
+        <a href="#contacto" class="btn btn-primary btn-lg reveal" data-i18n="commit.cta">Proteger mi rótulo ahora</a>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section class="section contact" id="contacto">
+      <div class="container grid-2 contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal" data-i18n="ct.eyebrow">Contacto</p>
+          <h2 class="reveal" data-i18n-html="ct.title">Hablemos de<br /><em>su rótulo</em></h2>
+          <p class="reveal" data-i18n="ct.body">Cuéntenos qué necesita y le responderemos con un diagnóstico y una propuesta a la medida. Sin compromiso.</p>
+
+          <div class="contact-cards reveal">
+            <a class="contact-card" href="tel:+17875504894">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div><b data-i18n="ct.phone">Teléfono</b><span>1 (787) 550-4894</span></div>
+            </a>
+            <a class="contact-card" href="https://wa.me/17875504894" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              <div><b>WhatsApp</b><span data-i18n="ct.wa">Respuesta rápida</span></div>
+            </a>
+            <div class="contact-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><b data-i18n="ct.area">Área de servicio</b><span data-i18n="ct.areaV">PR · Vieques · Culebra · St. Thomas · St. John</span></div>
+            </div>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="fName" data-i18n="ct.f.name">Nombre *</label>
+              <input id="fName" name="name" type="text" autocomplete="name" required data-i18n-ph="ct.f.nameP" placeholder="Su nombre" />
+              <span class="ferr" data-i18n="ct.f.nameE">Escriba su nombre</span>
+            </div>
+            <div class="field">
+              <label for="fBiz" data-i18n="ct.f.biz">Negocio</label>
+              <input id="fBiz" name="biz" type="text" autocomplete="organization" data-i18n-ph="ct.f.bizP" placeholder="Nombre del negocio" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="fPhone" data-i18n="ct.f.phone">Teléfono *</label>
+              <input id="fPhone" name="phone" type="tel" autocomplete="tel" required data-i18n-ph="ct.f.phoneP" placeholder="(787) 000-0000" />
+              <span class="ferr" data-i18n="ct.f.phoneE">Escriba un teléfono válido</span>
+            </div>
+            <div class="field">
+              <label for="fLoc" data-i18n="ct.f.loc">Ubicación</label>
+              <select id="fLoc" name="loc">
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Vieques">Vieques</option>
+                <option value="Culebra">Culebra</option>
+                <option value="St. Thomas">St. Thomas</option>
+                <option value="St. John">St. John</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="fService" data-i18n="ct.f.svc">Servicio de interés</label>
+              <select id="fService" name="service">
+                <option value="diag" data-i18n="ct.f.o1">Diagnóstico gratuito</option>
+                <option value="basico" data-i18n="ct.f.o2">Plan Básico</option>
+                <option value="premium" data-i18n="ct.f.o3">Plan Premium</option>
+                <option value="gold" data-i18n="ct.f.o4">Plan Gold</option>
+                <option value="repair" data-i18n="ct.f.o5">Reparación puntual</option>
+                <option value="emergency" data-i18n="ct.f.o6">🚨 Emergencia</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fQty" data-i18n="ct.f.qty">Cantidad de rótulos</label>
+              <input id="fQty" name="qty" type="number" min="1" value="1" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="fMsg" data-i18n="ct.f.msg">Mensaje</label>
+            <textarea id="fMsg" name="msg" rows="4" data-i18n-ph="ct.f.msgP" placeholder="Cuéntenos sobre su rótulo (estado, tamaño, ubicación)…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">
+            <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            <span data-i18n="ct.f.send">Enviar por WhatsApp</span>
+          </button>
+          <p class="form-note" data-i18n="ct.f.note">Al enviar, se abrirá WhatsApp con su mensaje listo para nuestro equipo.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <svg class="brand-mark" viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="44" fill="none" stroke="url(#ringGrad)" stroke-width="3"/>
+            <text x="49" y="62" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-weight="800" font-size="40" letter-spacing="-3"><tspan fill="#F4F8F0">S</tspan><tspan fill="#7BC62D">C</tspan></text>
+          </svg>
+          <span class="brand-word"><b>SIGN</b><i>CARE</i></span>
+        </a>
+        <p class="footer-tag" data-i18n="ft.tag">Protegemos la imagen de su negocio, un mantenimiento a la vez.</p>
+      </div>
+      <div class="footer-col">
+        <b data-i18n="ft.nav">Navegación</b>
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#planes" data-i18n="nav.plans">Planes</a>
+        <a href="#cobertura" data-i18n="nav.coverage">Cobertura</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <b data-i18n="ft.cov">Cobertura</b>
+        <span>Puerto Rico</span>
+        <span>Vieques &amp; Culebra</span>
+        <span>St. Thomas &amp; St. John</span>
+      </div>
+      <div class="footer-col">
+        <b data-i18n="ft.contact">Contacto</b>
+        <a href="tel:+17875504894">1 (787) 550-4894</a>
+        <a href="https://wa.me/17875504894" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 SignCare Group, LLC</span>
+      <span data-i18n="ft.rights">Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/17875504894?text=Hola%20SignCare%20%F0%9F%91%8B" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
