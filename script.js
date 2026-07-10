@@ -68,9 +68,10 @@
       "works.title": 'Resultados que<br class="br-lg" /> <em>hablan por sí solos</em>',
       "works.sub": "Arrastre para girar el carrusel y toque una foto para ampliarla.",
       "works.cap1": "Mantenimiento de letras de canal y módulos LED",
-      "works.cap2": "Restauración de letra: antes y después",
+      "works.cap2": "Restauración de letra iluminada: antes y después",
       "works.cap3": "Letras corpóreas restauradas: antes y después",
-      "works.cap4": "Limpieza profesional de rótulos y menu boards",
+      "works.cap4": "Rótulo restaurado y reinstalado: antes y después",
+      "works.cap5": "Limpieza profesional de rótulos y menu boards",
       "works.prev": "Anterior",
       "works.next": "Siguiente",
       "works.close": "Cerrar",
@@ -238,9 +239,10 @@
       "works.title": 'Results that<br class="br-lg" /> <em>speak for themselves</em>',
       "works.sub": "Drag to spin the carousel and tap a photo to enlarge it.",
       "works.cap1": "Channel letter and LED module maintenance",
-      "works.cap2": "Letter restoration: before and after",
+      "works.cap2": "Illuminated letter restoration: before and after",
       "works.cap3": "Dimensional letters restored: before and after",
-      "works.cap4": "Professional cleaning of signs and menu boards",
+      "works.cap4": "Sign restored and reinstalled: before and after",
+      "works.cap5": "Professional cleaning of signs and menu boards",
       "works.prev": "Previous",
       "works.next": "Next",
       "works.close": "Close",
@@ -542,8 +544,8 @@
   const ring3d = $("#c3dRing");
   const lb = $("#lightbox");
   if (stage3d && ring3d && lb) {
-    const UNIQUE = 4;
-    const FACES = 8;
+    const UNIQUE = 5;
+    const FACES = 10;
     const lbImg = $("#lbImg");
     const lbCap = $("#lbCap");
     const lbClose = $("#lbClose");
@@ -570,7 +572,7 @@
     }
 
     function layout3d() {
-      const cw = window.innerWidth <= 640 ? 1050 : 1700;
+      const cw = window.innerWidth <= 640 ? 1280 : 1980;
       const faceW = cw / FACES;
       const faceH = faceW * 0.74;
       const radius = Math.round(cw / (2 * Math.PI));
