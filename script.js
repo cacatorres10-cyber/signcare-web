@@ -1,5 +1,5 @@
 /* ============================================================
-   SignCare Group, LLC — i18n + interactions
+   SignCare Group, LLC | i18n + interactions
    ============================================================ */
 (function () {
   "use strict";
@@ -8,6 +8,7 @@
   const I18N = {
     es: {
       "nav.services": "Servicios",
+      "nav.works": "Trabajos",
       "nav.plans": "Planes",
       "nav.coverage": "Cobertura",
       "nav.about": "Nosotros",
@@ -29,7 +30,7 @@
 
       "lema.eyebrow": "La pregunta correcta",
       "lema.title": "“¿Por qué gastar <em>miles de dólares</em> en un rótulo nuevo, cuando el suyo puede lucir y funcionar <em>como nuevo</em>?”",
-      "lema.body": "En SignCare Group, LLC nos especializamos exclusivamente en el mantenimiento de rótulos comerciales. Un rótulo limpio, iluminado y bien mantenido transmite confianza, atrae más clientes y fortalece la imagen de cualquier negocio — y evita costosas reparaciones o un reemplazo prematuro.",
+      "lema.body": "En SignCare Group, LLC nos especializamos exclusivamente en el mantenimiento de rótulos comerciales. Un rótulo limpio, iluminado y bien mantenido transmite confianza, atrae más clientes y fortalece la imagen de cualquier negocio, y evita costosas reparaciones o un reemplazo prematuro.",
       "lema.p1": "Protege su inversión",
       "lema.p2": "Prolonga la vida útil",
       "lema.p3": "Imagen profesional todo el año",
@@ -56,12 +57,23 @@
       "svc.c2.i5": "Corrección de fallas eléctricas",
       "svc.c2.i6": "Reparación de iluminación parcial o total",
       "svc.c3.title": "Reparaciones Correctivas",
-      "svc.c3.desc": "Cuando detectamos una avería, la resolvemos — su rótulo vuelve a funcionar como debe.",
+      "svc.c3.desc": "Cuando detectamos una avería, la resolvemos. Su rótulo vuelve a funcionar como debe.",
       "svc.c3.i1": "Reparación de letras iluminadas",
       "svc.c3.i2": "Reparación de cajas de luz",
       "svc.c3.i3": "Sustitución de componentes eléctricos dañados",
       "svc.c3.i4": "Reparaciones por desgaste natural",
       "svc.c3.i5": "Reemplazo de piezas deterioradas",
+
+      "works.eyebrow": "Trabajos reales",
+      "works.title": 'Resultados que<br class="br-lg" /> <em>hablan por sí solos</em>',
+      "works.sub": "Arrastre para girar el carrusel y toque una foto para ampliarla.",
+      "works.cap1": "Mantenimiento de letras de canal y módulos LED",
+      "works.cap2": "Restauración de letra: antes y después",
+      "works.cap3": "Letras corpóreas restauradas: antes y después",
+      "works.cap4": "Limpieza profesional de rótulos y menu boards",
+      "works.prev": "Anterior",
+      "works.next": "Siguiente",
+      "works.close": "Cerrar",
 
       "cov.eyebrow": "Cobertura",
       "cov.title": "De Puerto Rico<br />a las <em>Islas Vírgenes</em>",
@@ -108,7 +120,7 @@
       "why.i4.t": "Servicio rápido",
       "why.i4.d": "Soluciones profesionales y confiables, con emergencias atendidas en menos de 24 horas.",
       "why.i5.t": "Cobertura regional",
-      "why.i5.d": "Puerto Rico, Vieques, Culebra, St. Thomas y St. John — donde esté su negocio.",
+      "why.i5.d": "Puerto Rico, Vieques, Culebra, St. Thomas y St. John, donde esté su negocio.",
       "why.i6.t": "Planes adaptados",
       "why.i6.d": "Tres niveles de mantenimiento diseñados para ajustarse a cada tipo de negocio.",
       "why.mision.t": "Nuestra Misión",
@@ -160,12 +172,13 @@
 • Ubicación: ${d.loc}
 • Rótulos: ${d.qty}
 • Teléfono: ${d.phone}${d.msg ? "\n• Mensaje: " + d.msg : ""}`,
-      "meta.title": "SignCare Group, LLC — Mantenimiento de Rótulos Comerciales | Puerto Rico & USVI",
-      "meta.desc": "Especialistas exclusivos en mantenimiento preventivo y correctivo de rótulos comerciales en Puerto Rico, Vieques, Culebra, St. Thomas y St. John. Su rótulo, como nuevo — sin gastar miles en reemplazarlo."
+      "meta.title": "SignCare Group, LLC | Mantenimiento de Rótulos Comerciales | Puerto Rico & USVI",
+      "meta.desc": "Especialistas exclusivos en mantenimiento preventivo y correctivo de rótulos comerciales en Puerto Rico, Vieques, Culebra, St. Thomas y St. John. Su rótulo, como nuevo, sin gastar miles en reemplazarlo."
     },
 
     en: {
       "nav.services": "Services",
+      "nav.works": "Our Work",
       "nav.plans": "Plans",
       "nav.coverage": "Coverage",
       "nav.about": "About",
@@ -187,7 +200,7 @@
 
       "lema.eyebrow": "The right question",
       "lema.title": "“Why spend <em>thousands of dollars</em> on a new sign, when yours can look and work <em>like new</em>?”",
-      "lema.body": "At SignCare Group, LLC we specialize exclusively in commercial sign maintenance. A clean, well-lit, well-maintained sign builds trust, attracts more customers and strengthens any business image — while avoiding costly repairs or premature replacement.",
+      "lema.body": "At SignCare Group, LLC we specialize exclusively in commercial sign maintenance. A clean, well-lit, well-maintained sign builds trust, attracts more customers and strengthens any business image, while avoiding costly repairs or premature replacement.",
       "lema.p1": "Protects your investment",
       "lema.p2": "Extends its service life",
       "lema.p3": "A professional image all year",
@@ -214,12 +227,23 @@
       "svc.c2.i5": "Electrical fault correction",
       "svc.c2.i6": "Partial or total lighting repair",
       "svc.c3.title": "Corrective Repairs",
-      "svc.c3.desc": "When we detect a failure, we fix it — your sign works the way it should again.",
+      "svc.c3.desc": "When we detect a failure, we fix it. Your sign works the way it should again.",
       "svc.c3.i1": "Illuminated letter repair",
       "svc.c3.i2": "Light box repair",
       "svc.c3.i3": "Replacement of damaged electrical components",
       "svc.c3.i4": "Repairs due to natural wear",
       "svc.c3.i5": "Replacement of deteriorated parts",
+
+      "works.eyebrow": "Real work",
+      "works.title": 'Results that<br class="br-lg" /> <em>speak for themselves</em>',
+      "works.sub": "Drag to spin the carousel and tap a photo to enlarge it.",
+      "works.cap1": "Channel letter and LED module maintenance",
+      "works.cap2": "Letter restoration: before and after",
+      "works.cap3": "Dimensional letters restored: before and after",
+      "works.cap4": "Professional cleaning of signs and menu boards",
+      "works.prev": "Previous",
+      "works.next": "Next",
+      "works.close": "Close",
 
       "cov.eyebrow": "Coverage",
       "cov.title": "From Puerto Rico<br />to the <em>Virgin Islands</em>",
@@ -264,9 +288,9 @@
       "why.i3.t": "Highly trained technicians",
       "why.i3.d": "A team expert in sign structures, acrylics and electrical systems.",
       "why.i4.t": "Fast service",
-      "why.i4.d": "Professional, reliable solutions — with emergencies handled in under 24 hours.",
+      "why.i4.d": "Professional, reliable solutions, with emergencies handled in under 24 hours.",
       "why.i5.t": "Regional coverage",
-      "why.i5.d": "Puerto Rico, Vieques, Culebra, St. Thomas and St. John — wherever your business is.",
+      "why.i5.d": "Puerto Rico, Vieques, Culebra, St. Thomas and St. John, wherever your business is.",
       "why.i6.t": "Tailored plans",
       "why.i6.d": "Three maintenance tiers designed to fit every type of business.",
       "why.mision.t": "Our Mission",
@@ -318,8 +342,8 @@
 • Location: ${d.loc}
 • Signs: ${d.qty}
 • Phone: ${d.phone}${d.msg ? "\n• Message: " + d.msg : ""}`,
-      "meta.title": "SignCare Group, LLC — Commercial Sign Maintenance | Puerto Rico & USVI",
-      "meta.desc": "Specialists dedicated exclusively to preventive and corrective maintenance of commercial signs in Puerto Rico, Vieques, Culebra, St. Thomas and St. John. Your sign, like new — without spending thousands on a replacement."
+      "meta.title": "SignCare Group, LLC | Commercial Sign Maintenance | Puerto Rico & USVI",
+      "meta.desc": "Specialists dedicated exclusively to preventive and corrective maintenance of commercial signs in Puerto Rico, Vieques, Culebra, St. Thomas and St. John. Your sign, like new, without spending thousands on a replacement."
     }
   };
 
@@ -350,6 +374,10 @@
     $$("[data-i18n-ph]").forEach((el) => {
       const v = dict[el.getAttribute("data-i18n-ph")];
       if (typeof v === "string") el.setAttribute("placeholder", v);
+    });
+    $$("[data-i18n-aria]").forEach((el) => {
+      const v = dict[el.getAttribute("data-i18n-aria")];
+      if (typeof v === "string") el.setAttribute("aria-label", v);
     });
     $$(".lang-btn").forEach((b) => b.classList.toggle("active", b.dataset.lang === lang));
     buildMarquee();
@@ -503,6 +531,145 @@
         card.style.transform = "";
       });
     });
+  }
+
+  /* ---------------- 3D works carousel ---------------- */
+  const stage3d = $("#c3dStage");
+  const ring3d = $("#c3dRing");
+  const lb = $("#lightbox");
+  if (stage3d && ring3d && lb) {
+    const UNIQUE = 4;
+    const FACES = 8;
+    const lbImg = $("#lbImg");
+    const lbCap = $("#lbCap");
+    const lbClose = $("#lbClose");
+    let rot = 0, vel = 0, dragging = false, moved = 0, lastX = 0;
+    let autoOn = !reducedMotion;
+    let autoTimer = null;
+    let lbOpen = false;
+
+    const faces = [];
+    for (let i = 0; i < FACES; i++) {
+      const idx = (i % UNIQUE) + 1;
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "c3d-face";
+      b.dataset.idx = String(idx);
+      const img = document.createElement("img");
+      img.src = "assets/gallery/work-" + idx + ".jpg";
+      img.alt = "";
+      img.draggable = false;
+      img.loading = "lazy";
+      b.appendChild(img);
+      ring3d.appendChild(b);
+      faces.push(b);
+    }
+
+    function layout3d() {
+      const cw = window.innerWidth <= 640 ? 1050 : 1700;
+      const faceW = cw / FACES;
+      const faceH = faceW * 0.74;
+      const radius = Math.round(cw / (2 * Math.PI));
+      stage3d.style.height = Math.round(faceH + 60) + "px";
+      faces.forEach((f, i) => {
+        f.style.width = faceW + "px";
+        f.style.height = faceH + "px";
+        f.style.margin = -faceH / 2 + "px 0 0 " + -faceW / 2 + "px";
+        f.style.transform = "rotateY(" + (i * (360 / FACES)) + "deg) translateZ(" + radius + "px)";
+      });
+      render3d();
+    }
+    function render3d() {
+      ring3d.style.transform = "translate(-50%, -50%) rotateY(" + rot + "deg)";
+    }
+    function pauseAuto() {
+      autoOn = false;
+      clearTimeout(autoTimer);
+      autoTimer = setTimeout(() => {
+        if (!reducedMotion && !lbOpen) autoOn = true;
+      }, 3200);
+    }
+
+    let lastFrame = performance.now();
+    function loop3d(t) {
+      const dt = Math.min((t - lastFrame) / 16.67, 3);
+      lastFrame = t;
+      if (!dragging) {
+        if (Math.abs(vel) > 0.012) {
+          rot += vel * dt;
+          vel *= Math.pow(0.94, dt);
+          render3d();
+        } else if (autoOn) {
+          rot += 0.05 * dt;
+          render3d();
+        }
+      }
+      requestAnimationFrame(loop3d);
+    }
+
+    stage3d.addEventListener("pointerdown", (e) => {
+      dragging = true;
+      moved = 0;
+      lastX = e.clientX;
+      vel = 0;
+      pauseAuto();
+    });
+    window.addEventListener("pointermove", (e) => {
+      if (!dragging) return;
+      const dx = e.clientX - lastX;
+      lastX = e.clientX;
+      moved += Math.abs(dx);
+      rot += dx * 0.16;
+      vel = dx * 0.16;
+      render3d();
+    }, { passive: true });
+    window.addEventListener("pointerup", () => {
+      if (!dragging) return;
+      dragging = false;
+      if (reducedMotion) vel = 0;
+      pauseAuto();
+    });
+
+    faces.forEach((f) => {
+      f.addEventListener("click", () => {
+        if (moved > 8) return;
+        openLb(parseInt(f.dataset.idx, 10));
+      });
+    });
+
+    function openLb(idx) {
+      lbOpen = true;
+      autoOn = false;
+      const cap = I18N[lang]["works.cap" + idx] || "";
+      lbImg.src = "assets/gallery/work-" + idx + ".jpg";
+      lbImg.alt = cap;
+      lbCap.textContent = cap;
+      lb.classList.add("open");
+      lb.setAttribute("aria-hidden", "false");
+      document.body.classList.add("lb-open");
+      lbClose.focus();
+    }
+    function closeLb() {
+      lbOpen = false;
+      lb.classList.remove("open");
+      lb.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("lb-open");
+      pauseAuto();
+    }
+    lbClose.addEventListener("click", closeLb);
+    lb.addEventListener("click", (e) => {
+      if (e.target === lb) closeLb();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lbOpen) closeLb();
+    });
+
+    $("#c3dPrev").addEventListener("click", () => { vel = 0; pauseAuto(); rot += 360 / FACES; render3d(); });
+    $("#c3dNext").addEventListener("click", () => { vel = 0; pauseAuto(); rot -= 360 / FACES; render3d(); });
+
+    window.addEventListener("resize", layout3d);
+    layout3d();
+    requestAnimationFrame(loop3d);
   }
 
   /* ---------------- Plan CTA -> form prefill ---------------- */
