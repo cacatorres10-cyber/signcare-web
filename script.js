@@ -17,7 +17,7 @@
 
       "hero.eyebrow": "SignCare Group, LLC · Puerto Rico & Islas Vírgenes",
       "hero.title": 'Su rótulo,<br /><span class="neon">como&nbsp;nuevo</span>.<br />Sin gastar miles.',
-      "hero.sub": "Especialistas exclusivos en mantenimiento preventivo y correctivo de rótulos comerciales. Protegemos su inversión y la imagen de su negocio durante todo el año.",
+      "hero.sub": "Especialistas en mantenimiento preventivo y correctivo de rótulos comerciales y billboards. Protegemos su inversión y la imagen de su negocio durante todo el año.",
       "hero.cta1": "Solicitar diagnóstico",
       "hero.cta2": "Ver planes",
       "hero.stat1": "Respuesta de emergencia",
@@ -26,7 +26,7 @@
       "hero.chip1": "Emergencias",
       "hero.chip2": "Cobertura total",
 
-      "mq.items": "Limpieza profunda·Módulos LED·Transformadores·Fotoceldas·Revisión estructural·Sellados y anclajes·Restauración de brillo·Laminado protector·Emergencias 24h·Inspección preventiva",
+      "mq.items": "Limpieza profunda·Módulos LED·Transformadores·Fotoceldas·Billboards·Mantenimiento de pintura·Soldaduras·Estructuras pylon·Revisión estructural·Sellados y anclajes·Restauración de brillo·Emergencias 24h",
 
       "lema.eyebrow": "La pregunta correcta",
       "lema.title": "“¿Por qué gastar <em>miles de dólares</em> en un rótulo nuevo, cuando el suyo puede lucir y funcionar <em>como nuevo</em>?”",
@@ -63,6 +63,13 @@
       "svc.c3.i3": "Sustitución de componentes eléctricos dañados",
       "svc.c3.i4": "Reparaciones por desgaste natural",
       "svc.c3.i5": "Reemplazo de piezas deterioradas",
+      "svc.c4.title": "Billboards & Estructuras Pylon",
+      "svc.c4.desc": "Mantenimiento integral de billboards y estructuras pylon: funcionales, seguras y en cumplimiento con la ley.",
+      "svc.c4.i1": "Mantenimiento eléctrico de rótulos y billboards",
+      "svc.c4.i2": "Mantenimiento de pintura",
+      "svc.c4.i3": "Soldaduras y refuerzos estructurales",
+      "svc.c4.i4": "Inspección de estructura de pylon",
+      "svc.c4.i5": "Cumplimiento con leyes y regulaciones",
 
       "works.eyebrow": "Trabajos reales",
       "works.title": 'Resultados que<br class="br-lg" /> <em>hablan por sí solos</em>',
@@ -72,6 +79,10 @@
       "works.cap3": "Letras corpóreas restauradas: antes y después",
       "works.cap4": "Rótulo restaurado y reinstalado: antes y después",
       "works.cap5": "Limpieza profesional de rótulos y menu boards",
+      "works.cap6": "Mantenimiento de pintura de letras y rótulos",
+      "works.cap7": "Mantenimiento eléctrico de luces y billboards",
+      "works.cap8": "Así encontramos algunos rótulos: por eso existe el mantenimiento",
+      "works.videos": "SignCare en acción",
       "works.prev": "Anterior",
       "works.next": "Siguiente",
       "works.close": "Cerrar",
@@ -113,7 +124,7 @@
       "why.eyebrow": "¿Por qué SignCare?",
       "why.title": 'El aliado que su rótulo<br class="br-lg" /> <em>estaba esperando</em>',
       "why.i1.t": "Especialistas exclusivos",
-      "why.i1.d": "Solo hacemos una cosa: mantenimiento de rótulos. Y la hacemos mejor que nadie.",
+      "why.i1.d": "El mantenimiento de rótulos y billboards es lo nuestro. Y lo hacemos mejor que nadie.",
       "why.i2.t": "Protegemos su inversión",
       "why.i2.d": "Evitamos gastos innecesarios en reemplazos y aumentamos la vida útil de su rótulo.",
       "why.i3.t": "Técnicos capacitados",
@@ -174,7 +185,7 @@
 • Rótulos: ${d.qty}
 • Teléfono: ${d.phone}${d.msg ? "\n• Mensaje: " + d.msg : ""}`,
       "meta.title": "SignCare Group, LLC | Mantenimiento de Rótulos Comerciales | Puerto Rico & USVI",
-      "meta.desc": "Especialistas exclusivos en mantenimiento preventivo y correctivo de rótulos comerciales en Puerto Rico, Vieques, Culebra, St. Thomas y St. John. Su rótulo, como nuevo, sin gastar miles en reemplazarlo."
+      "meta.desc": "Especialistas en mantenimiento preventivo y correctivo de rótulos comerciales y billboards en Puerto Rico, Vieques, Culebra, St. Thomas y St. John. Su rótulo, como nuevo, sin gastar miles en reemplazarlo."
     },
 
     en: {
@@ -188,7 +199,7 @@
 
       "hero.eyebrow": "SignCare Group, LLC · Puerto Rico & U.S. Virgin Islands",
       "hero.title": 'Your sign,<br /><span class="neon">like&nbsp;new</span>.<br />Without spending thousands.',
-      "hero.sub": "Specialists dedicated exclusively to preventive and corrective maintenance of commercial signs. We protect your investment and your business image all year round.",
+      "hero.sub": "Specialists in preventive and corrective maintenance of commercial signs and billboards. We protect your investment and your business image all year round.",
       "hero.cta1": "Request an assessment",
       "hero.cta2": "View plans",
       "hero.stat1": "Emergency response",
@@ -197,7 +208,7 @@
       "hero.chip1": "Emergencies",
       "hero.chip2": "Full coverage",
 
-      "mq.items": "Deep cleaning·LED modules·Transformers·Photocells·Structural inspection·Seals & anchors·Shine restoration·Protective laminate·24h emergencies·Preventive inspection",
+      "mq.items": "Deep cleaning·LED modules·Transformers·Photocells·Billboards·Paint maintenance·Welding·Pylon structures·Structural inspection·Seals & anchors·Shine restoration·24h emergencies",
 
       "lema.eyebrow": "The right question",
       "lema.title": "“Why spend <em>thousands of dollars</em> on a new sign, when yours can look and work <em>like new</em>?”",
@@ -234,6 +245,13 @@
       "svc.c3.i3": "Replacement of damaged electrical components",
       "svc.c3.i4": "Repairs due to natural wear",
       "svc.c3.i5": "Replacement of deteriorated parts",
+      "svc.c4.title": "Billboards & Pylon Structures",
+      "svc.c4.desc": "Complete maintenance for billboards and pylon structures: functional, safe and fully code-compliant.",
+      "svc.c4.i1": "Electrical maintenance for signs and billboards",
+      "svc.c4.i2": "Paint maintenance",
+      "svc.c4.i3": "Welding and structural reinforcement",
+      "svc.c4.i4": "Pylon structure inspection",
+      "svc.c4.i5": "Compliance with laws and regulations",
 
       "works.eyebrow": "Real work",
       "works.title": 'Results that<br class="br-lg" /> <em>speak for themselves</em>',
@@ -243,6 +261,10 @@
       "works.cap3": "Dimensional letters restored: before and after",
       "works.cap4": "Sign restored and reinstalled: before and after",
       "works.cap5": "Professional cleaning of signs and menu boards",
+      "works.cap6": "Paint maintenance for letters and signs",
+      "works.cap7": "Electrical maintenance of billboard lighting",
+      "works.cap8": "How we find some signs: this is why maintenance exists",
+      "works.videos": "SignCare in action",
       "works.prev": "Previous",
       "works.next": "Next",
       "works.close": "Close",
@@ -284,7 +306,7 @@
       "why.eyebrow": "Why SignCare?",
       "why.title": 'The ally your sign<br class="br-lg" /> <em>has been waiting for</em>',
       "why.i1.t": "Exclusive specialists",
-      "why.i1.d": "We do one thing only: sign maintenance. And we do it better than anyone.",
+      "why.i1.d": "Sign and billboard maintenance is our craft. And we do it better than anyone.",
       "why.i2.t": "We protect your investment",
       "why.i2.d": "We prevent unnecessary replacement costs and extend your sign's service life.",
       "why.i3.t": "Highly trained technicians",
@@ -345,7 +367,7 @@
 • Signs: ${d.qty}
 • Phone: ${d.phone}${d.msg ? "\n• Message: " + d.msg : ""}`,
       "meta.title": "SignCare Group, LLC | Commercial Sign Maintenance | Puerto Rico & USVI",
-      "meta.desc": "Specialists dedicated exclusively to preventive and corrective maintenance of commercial signs in Puerto Rico, Vieques, Culebra, St. Thomas and St. John. Your sign, like new, without spending thousands on a replacement."
+      "meta.desc": "Specialists in preventive and corrective maintenance of commercial signs and billboards in Puerto Rico, Vieques, Culebra, St. Thomas and St. John. Your sign, like new, without spending thousands on a replacement."
     }
   };
 
@@ -544,8 +566,8 @@
   const ring3d = $("#c3dRing");
   const lb = $("#lightbox");
   if (stage3d && ring3d && lb) {
-    const UNIQUE = 5;
-    const FACES = 10;
+    const UNIQUE = 8;
+    const FACES = 8;
     const lbImg = $("#lbImg");
     const lbCap = $("#lbCap");
     const lbClose = $("#lbClose");

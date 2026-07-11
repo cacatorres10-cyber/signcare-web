@@ -389,7 +389,8 @@ h2 em, .commit-quote em, h1 em {
 /* ---------- Services ---------- */
 .services { background: var(--bg-2); }
 .services h2 { margin-bottom: 56px; }
-.svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; max-width: 980px; margin: 0 auto; }
+.svc-grid .reveal:nth-child(4) { transition-delay: 0.36s; }
 .svc-card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -481,6 +482,21 @@ h2 em, .commit-quote em, h1 em {
 }
 .c3d-arrow:hover { background: var(--green-dark); border-color: var(--green-dark); color: #fff; transform: translateY(-2px); }
 .c3d-arrow svg { width: 20px; height: 20px; }
+
+.works-videos { margin-top: 64px; }
+.wv-title {
+  text-align: center; font-size: 1.35rem; margin-bottom: 26px;
+}
+.wv-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.wv-grid video {
+  width: min(300px, 86vw);
+  aspect-ratio: 464 / 832;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: #0b120a;
+  box-shadow: 0 16px 40px rgba(23, 46, 8, 0.14);
+}
 
 /* ---------- Lightbox ---------- */
 .lightbox {
