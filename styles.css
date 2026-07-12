@@ -656,26 +656,56 @@ body.lb-open { overflow: hidden; }
   background: linear-gradient(180deg, rgba(123, 198, 45, 0.12) 0%, #ffffff 45%);
   border-color: rgba(109, 181, 41, 0.6);
   box-shadow: 0 0 0 1px rgba(109, 181, 41, 0.3), var(--shadow-lg);
-  transform: scale(1.03);
+  transform: scale(1.015);
 }
-.plan-featured:hover { transform: scale(1.03) translateY(-8px); }
+.plan-featured:hover { transform: scale(1.015) translateY(-8px); }
 .plan-flag {
   position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
   background: var(--green-dark); color: #ffffff;
   font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
   padding: 6px 16px; border-radius: 999px;
   box-shadow: 0 6px 20px rgba(87, 145, 26, 0.4);
+  white-space: nowrap;
 }
-.plan-gold { border-color: rgba(201, 161, 54, 0.55); }
-.plan-gold:hover { box-shadow: var(--shadow-lg), 0 0 40px rgba(201, 161, 54, 0.15); }
+
+/* Gold: the flagship plan */
+.plan-gold {
+  background:
+    radial-gradient(ellipse 90% 50% at 50% 0%, rgba(201, 161, 54, 0.22), transparent 60%),
+    linear-gradient(165deg, #131c0f 0%, #0b120a 60%, #10160c 100%);
+  border-color: rgba(232, 199, 101, 0.65);
+  box-shadow: 0 0 0 1px rgba(232, 199, 101, 0.35), 0 30px 70px rgba(20, 30, 10, 0.35), 0 0 60px rgba(201, 161, 54, 0.22);
+  transform: scale(1.06);
+}
+.plan-gold::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  background: linear-gradient(105deg, transparent 42%, rgba(255, 236, 170, 0.14) 50%, transparent 58%);
+  background-size: 320% 100%;
+  background-position: 230% 0;
+  animation: goldSheen 5s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes goldSheen {
+  0% { background-position: 230% 0; }
+  40%, 100% { background-position: -130% 0; }
+}
+.plan-gold:hover { transform: scale(1.06) translateY(-8px); box-shadow: 0 0 0 1px rgba(232, 199, 101, 0.5), 0 36px 80px rgba(20, 30, 10, 0.42), 0 0 80px rgba(201, 161, 54, 0.3); }
+.plan-gold h3 {
+  background: linear-gradient(120deg, #f7e3a0, #e8c765 55%, #c9a136);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  font-size: 1.7rem;
+}
+.plan-gold .plan-tag { color: #c8d3c1; }
+.plan-gold ul li { color: #eaf0e4; }
 .flag-gold {
   background: linear-gradient(135deg, #f3d97e, #c9a136); color: #171002;
-  box-shadow: 0 6px 20px rgba(201, 161, 54, 0.45);
+  box-shadow: 0 6px 20px rgba(201, 161, 54, 0.5);
 }
 .plan-gold ul li::before {
   background:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23171002' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4 10-10'/%3E%3C/svg%3E") center / 10px no-repeat,
-    var(--gold);
+    linear-gradient(135deg, #f3d97e, #c9a136);
 }
 
 /* ---------- Why ---------- */
@@ -859,8 +889,8 @@ a.contact-card:hover { border-color: rgba(109, 181, 41, 0.55); transform: transl
   .chip-2 { bottom: 40px; right: 2%; }
   .svc-grid, .why-grid { grid-template-columns: 1fr 1fr; }
   .plan-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
-  .plan-featured { transform: none; }
-  .plan-featured:hover { transform: translateY(-8px); }
+  .plan-featured, .plan-gold { transform: none; }
+  .plan-featured:hover, .plan-gold:hover { transform: translateY(-8px); }
   .mv-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .scroll-hint { display: none; }
@@ -881,9 +911,10 @@ a.contact-card:hover { border-color: rgba(109, 181, 41, 0.55); transform: transl
   }
   .reveal { opacity: 1; transform: none; }
   .cursor-glow { display: none; }
-  /* Ambient brand loops stay on (slower): marquee, radar, pulses */
+  /* Ambient brand loops stay on (slower): marquee, radar, pulses, gold sheen */
   .marquee-track { animation: marquee 60s linear infinite !important; }
   .radar-sweep { animation: sweep 6.5s linear infinite !important; }
   .cov-dot { animation: covPulse 3.2s ease-in-out infinite !important; }
   .pulse-badge { animation: badgePulse 2.8s ease-in-out infinite !important; }
+  .plan-gold::before { animation: goldSheen 6s ease-in-out infinite !important; }
 }
