@@ -106,6 +106,7 @@
       "works.cap6": "Mantenimiento de pintura de letras y rótulos",
       "works.cap7": "Mantenimiento eléctrico de luces y billboards",
       "works.cap8": "Así encontramos algunos rótulos: por eso existe el mantenimiento",
+      "works.cap9": "Mantenimiento de estructura pylon y billboard, sin obra alterada",
       "works.videos": "SignCare en acción",
       "works.prev": "Anterior",
       "works.next": "Siguiente",
@@ -313,6 +314,7 @@
       "works.cap6": "Paint maintenance for letters and signs",
       "works.cap7": "Electrical maintenance of billboard lighting",
       "works.cap8": "How we find some signs: this is why maintenance exists",
+      "works.cap9": "Pylon and billboard structure maintenance, no disruption to your business",
       "works.videos": "SignCare in action",
       "works.prev": "Previous",
       "works.next": "Next",
@@ -616,8 +618,8 @@
   const ring3d = $("#c3dRing");
   const lb = $("#lightbox");
   if (stage3d && ring3d && lb) {
-    const UNIQUE = 8;
-    const FACES = 8;
+    const UNIQUE = 9;
+    const FACES = 9;
     const lbImg = $("#lbImg");
     const lbCap = $("#lbCap");
     const lbClose = $("#lbClose");
